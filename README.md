@@ -13,4 +13,5 @@ To run the C++ program that uses the library:
 1) export the env variable PYINCLUDE_PATH (the Python.h file should be under this path, usually should be usr/include/python{version}/)  
 2) run `make run_cc`  
 
-Note: the example requires installation of Cython and numpy
+Note: the example requires installation of Cython and numpy  
+if you cannot find the Python.h file, please kindly refer to this link https://stackoverflow.com/questions/21530577/fatal-error-python-h-no-such-file-or-directory  
