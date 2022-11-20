@@ -9,9 +9,8 @@ run_py:
 pylibs := `python3-config --includes  --libs --embed`
 
 # PYINCLUDE_PATH -> path to Python.h
-compile_cc:
-	
+try_lib:
 	g++ try_lib.cc -o try_lib $(pylibs) ./numpylib.cpython-310-x86_64-linux-gnu.so -I ${PYINCLUDE_PATH}
 
-run_cc : compile_cc
+run_cc : try_lib
 	./try_lib
